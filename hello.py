@@ -17,9 +17,11 @@ assert next(iterator) == 6
 assert next(iterator) == 7
 assert next(iterator) == 8
 assert next(iterator) == 9
+
+raised = False
 try:
     next(iterator)
 except StopIteration:
-    pass
-else:
-    assert False
+    raised = True
+
+assert raised
