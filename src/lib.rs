@@ -63,7 +63,7 @@ fn distinct<'py>(
 }
 
 #[pymodule]
-fn _rspy(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn _rspy_utilities(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(distinct, m)?)?;
     Ok(())
 }

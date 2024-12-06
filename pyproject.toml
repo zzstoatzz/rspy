@@ -3,7 +3,7 @@ requires = ["maturin>=1.7,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "rspy"
+name = "rspy_utilities"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Rust",
@@ -13,5 +13,5 @@ dynamic = ['description', 'license', 'readme', 'version']
 
 [tool.maturin]
 python-source = "python"
-module-name = "rspy._rspy"
+module-name = "rspy_utilities._rspy_utilities"
 features = ["pyo3/extension-module"]

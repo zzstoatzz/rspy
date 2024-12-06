@@ -135,7 +135,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rspy"
+name = "rspy_utilities"
 version = "0.1.0"
 dependencies = [
  "pyo3",
