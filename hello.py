@@ -1,4 +1,4 @@
-from rspy_utilities import distinct
+from rspy_utilities import distinct, partition
 
 print(list(distinct([1, 2, 2, 3, 3, 4])))  # [1, 2, 3, 4]
 
@@ -25,3 +25,6 @@ except StopIteration:
     raised = True
 
 assert raised
+
+
+print(partition(range(10), lambda x: x % 2 == 0))

@@ -10,6 +10,7 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
 ]
 dynamic = ['description', 'license', 'readme', 'version']
+dependencies = ["maturin"]
 
 [tool.maturin]
 python-source = "python"
