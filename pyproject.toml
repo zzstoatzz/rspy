@@ -9,10 +9,11 @@ classifiers = [
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
 ]
-dynamic = ['description', 'license', 'readme', 'version']
+dynamic = ['description', 'license', 'readme']
 dependencies = ["maturin"]
 
 [tool.maturin]
 python-source = "python"
 module-name = "rspy_utilities._rspy_utilities"
 features = ["pyo3/extension-module"]
+version = "cargo"
